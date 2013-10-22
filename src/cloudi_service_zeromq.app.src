@@ -9,8 +9,8 @@
         ]},
    {registered, []},
    {applications, [
-        erlzmq2,
         cloudi_core,
+        erlzmq,
         trie,
         stdlib,
         kernel
