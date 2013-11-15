@@ -75,10 +75,12 @@
         context :: erlzmq:erlzmq_context(),
         endian :: big | little | native,
         process_metadata :: boolean(),
-        publish :: trie:trie(), % NameInternal -> [{NameExternal,
-                                         %                   Socket} | _]
-        request :: trie:trie(), % Name -> Socket
-        push :: trie:trie(),    % Name -> Socket
+        publish :: trie:trie(),
+                % NameInternal -> [{NameExternal, Socket} | _]
+        request :: trie:trie(),
+                % Name -> Socket
+        push :: trie:trie(),
+             % Name -> Socket
         receives :: dict(), % Socket -> {reply, Name}
                             % Socket -> [{subscribe,
                             %             {BinaryMax, BinaryPattern,
