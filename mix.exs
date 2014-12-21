@@ -3,7 +3,7 @@ defmodule CloudIServiceZeromq do
 
   def project do
     [app: :cloudi_service_zeromq,
-     version: "1.4.0-rc.4",
+     version: "1.4.0",
      language: :erlang,
      description: description,
      package: package,
@@ -14,7 +14,7 @@ defmodule CloudIServiceZeromq do
     [{:erlzmq,
       [git: "https://github.com/zeromq/erlzmq2.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.4.0-rc.4"}]
+     {:cloudi_core, "~> 1.4.0"}]
   end
 
   defp description do
